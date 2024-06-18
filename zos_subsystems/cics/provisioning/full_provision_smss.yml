@@ -7,7 +7,7 @@
 
   vars:
     applid: APPLID
-    cmci_port: 27000
+    cmci_port: 2728250000
 
   module_defaults:
     group/ibm.ibm_zos_cics.region:
@@ -77,6 +77,9 @@
     - name: Create CICS startup JCL data set (DFHSTART)
       ibm.ibm_zos_cics.region_jcl:
         applid: "{{ applid }}"
+        dfhrpl:
+          top_data_sets:
+            - "KHANEN.INSIGHT.EXEC"
         job_parameters:
           region: 0M
         sit_parameters:
