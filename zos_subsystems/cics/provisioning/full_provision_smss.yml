@@ -7,7 +7,7 @@
 
   vars:
     applid: APPLID
-    cmci_port: 2728250000
+    cmci_port: 27000
 
   module_defaults:
     group/ibm.ibm_zos_cics.region:
