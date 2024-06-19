@@ -79,7 +79,7 @@
         applid: "{{ applid }}"
         dfhrpl:
           top_data_sets:
-            - "KHANEN.INSIGHT.EXEC"
+            - "KHANEN.DEMO.EXEC"
         job_parameters:
           region: 0M
         sit_parameters:
